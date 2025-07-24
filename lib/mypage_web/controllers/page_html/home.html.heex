@@ -1,0 +1,21 @@
+<div class="min-h-screen bg-cover bg-center flex flex-col items-center justify-center px-4 py-16"
+     style="background-image: url('/images/background3.png');">
+
+     <h1 class="text-4xl font-bold mb-4">We are happy to have you, please enjoy the Portal!</h1> 
+     
+  <div class="bg-white bg-opacity-90 p-10 rounded-xl shadow-xl text-center max-w-lg w-full">
+    <h1 class="text-4xl font-bold mb-4">Welcome to the Portal</h1>
+    <p class="text-gray-700 mb-6">Choose how you want to access the system:</p>
+
+    <div class="grid gap-4">
+      <.link navigate={~p"/users/log_in"} class="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg block">
+        Login as User
+      </.link>
+      <.link navigate={~p"/users/register"} class="text-blue-700 underline">Register as User</.link>
+      <.link navigate={~p"/admins/log_in"} class="bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg block">
+        Login as Admin
+      </.link>
+      <.link navigate={~p"/admins/register"} class="text-green-700 underline">Register as Admin</.link>
+    </div>
+  </div>
+</div>
